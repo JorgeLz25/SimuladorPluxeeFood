@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/resultados/main.css">
+        <link rel="shortcut icon" href="../../images/resultados/Icono-Pluxee.ico">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-title">
+                <span>¡Listo! Estos son tus resultados de ahorro con Pluxee Alimentación</spna>
+                <hr  class="hr-titulo" width="130px" />
+            </div>
+            <div class="header-subtitle">
+                <span>Aquí podrás conocer el ahorro que generarás para tu empresa y el beneficio que recibirán tus colaboradores.</span>   
+            </div>
+            <div class="body-container">
+                <div class="body-regresar">
+                    <img src="../../images/resultados/Icon_Arrow.png" style="width: 30px;height: 30px;" onclick="regresar()">
+                    <h3>Volver a calcular ahorro</h3>
+                </div>
+                <div class="body-breads">
+                    <div class="body-breads-number_1">
+                        <span>1</span>
+                    </div>
+                    <div ><hr  class="hr-numero"/></div>
+                    <div class="body-breads-number_2">
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="body-resultado">
+                    <div class="resultado-con-pluxee">
+                        <div class="Pluxee-Primer-Resultado">
+                            <div class="Pluxee-Iconos">
+                                <div class="Icono-Feliz">
+                                    <img src="../../images/resultados/Happy.png" style="width: 25px;height: 25px;">
+                                    <h4>Para tu trabajador</h4>
+                                </div>
+                                <div class="Icono-Empresa">
+                                    <img src="../../images/resultados/Buildings.png" style="width: 25px;height: 25px;">
+                                    <h4>Para tu empresa</h4>
+                                </div>
+                            </div>
+                            <div class="Pluxee-valores">
+                                <div class="Valores-resultado-1">
+                                    <h1>Con Pluxee</h1>
+                                </div>
+                                <div class="Valores-Contenedor">
+                                    <div class="Valores-Seccion-1">
+                                        <div class="Icono-Feliz-Responsive">
+                                            <img src="../../images/resultados/Happy.png" style="width: 25px;height: 25px;">
+                                            <h4>Para tu trabajador</h4>
+                                        </div>
+                                        <div class="Valores-Seccion-1-Responsive">
+                                            <div class="Valores-resultado-2">
+                                                <div class="resultado-titulo">
+                                                    <p>Beneficio de alimentos adicional al sueldo base mensual.</p>
+                                                </div>
+                                                <div class="resultado-monto">
+                                                    <label class="resultado-monto-label" id="ConBenefiAlimenTraba">0</label>
+                                                </div>
+                                            </div>
+            
+                                            <div class="Valores-resultado-3">
+                                                <div class="resultado-titulo-general">
+                                                    <p>Incremento de poder adquisitivo con Pluxee</p>
+                                                </div>
+                                                <div class="resultado-monto-general">
+                                                    <label class="resultado-monto-label" id="ConPoderAdquisiTrabaVal">0</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="Valores-Seccion-2">
+                                        <div class="Icono-Empresa-Responsive">
+                                            <img src="../../images/resultados/Buildings.png" style="width: 25px;height: 25px;">
+                                            <h4>Para tu empresa</h4>
+                                        </div>
+                                        <div class="Valores-Seccion-2-Responsive">
+                                            <div class="Valores-resultado-4">
+                                                <div class="resultado-titulo-general">
+                                                    <p>Costo por entrega de beneficio de alimentos mensual por <label class="label-trabajadores">0</label> trabajadores.</p>
+                                                </div>
+                                                <div class="resultado-monto-general">
+                                                    <label class="resultado-monto-label" id="ConCostoporEntrega">0</label>
+                                                </div>
+                                            </div>
+                                            <div class="Valores-resultado-5">
+                                                <div class="resultado-titulo-general">
+                                                <p>Ahorro mensual con Pluxee Alimentación a <label class="label-trabajadores">0</label> trabajadores</p>
+                                                </div>
+                                                <div class="resultado-monto-general">
+                                                    <label class="resultado-monto-label" id="ConAhorroMensual">0</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-ahorro">
+                            <div class="beneficios-ahorro">
+                                <p>¡Quiero estos beneficios!</p>
+                            </div>
+                            <div class="ahorro-text">
+                                <p>
+                                    Ahorro anual con Pluxee Alimentación
+                                </p>
+                                
+                            </div>
+                            <div class="container-resultado">
+                                <label class="ahorro-resultado"  id="ConAhorroTotal">0</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sin-resultado-pluxee">
+                        <div class="sin-Pluxee-Primer-Resultado">
+                            <div class="sin-Pluxee-Iconos">
+                                <div class="sin-Icono-Feliz">
+                                    <img src="../../images/resultados/Happy.png" style="width: 25px;height: 25px;">
+                                    <h4>Para tu trabajador</h4>
+                                </div>
+                                <div class="sin-Icono-Empresa">
+                                    <img src="../../images/resultados/Buildings.png" style="width: 25px;height: 25px;">
+                                    <h4>Para tu empresa</h4>
+                                </div>
+                            </div>
+                            <div class="sin-Pluxee-valores">
+                                <div class="sin-Valores-resultado-1">
+                                    <h1>Sin Pluxee</h1>
+                                </div>
+                                <div class="sin-valores-Contenedor">
+                                    <div class="sin-Contenedor-Seccion-1">
+                                        <div class="sin-Icono-Feliz-Responsive">
+                                            <img src="../../images/resultados/Happy.png" style="width: 25px;height: 25px;">
+                                            <h4>Para tu trabajador</h4>
+                                        </div>
+                                        <div class="Sin-Valores-Seccion-1-Responsive">
+                                            <div class="sin-Valores-resultado-2">
+                                                <div class="sin-resultado-titulo">
+                                                    <p>Incremento salarial en planilla mensual.</p>
+                                                </div>
+                                                <div class="sin-resultado-monto">
+                                                    <label class="sin-resultado-monto-label" id="SinBenefiAlimenTraba">0</label>
+                                                </div>
+                                            </div>
+            
+                                            <div class="sin-Valores-resultado-3">
+                                                <div class="sin-resultado-titulo-general">
+                                                    <p>Incremento neto mensual</p>
+                                                </div>
+                                                <div class="sin-resultado-monto-general">
+                                                    <label class="sin-resultado-monto-label" id="SinPoderAdquisiTrabaVal">0</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="sin-Contenedor-Seccion-2">
+                                        <div class="sin-Icono-Empresa-Responsive">
+                                            <img src="../../images/resultados/Buildings.png" style="width: 25px;height: 25px;">
+                                            <h4>Para tu empresa</h4>
+                                        </div>
+                                        <div class="sin-Valores-Seccion-2-Reponsive">
+                                            <div class="sin-Valores-resultado-4">
+                                                <div class="sin-resultado-titulo-general">
+                                                    <p>Costo de incremento salarial en planilla mensual a <label class="sin-label-trabajadores">0</label> trabajadores.</p>
+                                                </div>
+                                                <div class="sin-resultado-monto-general">
+                                                    <label class="sin-resultado-monto-label" id="SinCostoporEntrega">0</label>
+                                                </div>
+                                            </div>
+                                            <div class="sin-Valores-resultado-5">
+                                                <div class="sin-resultado-titulo-general">
+                                                <p>Sobre costo mensual</p>
+                                                </div>
+                                                <div class="sin-resultado-monto-general">
+                                                    <label class="sin-resultado-monto-label" id="SinAhorroMensual">0</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sin-container-ahorro">
+                            <div class="sin-ahorro-text">
+                                <p>
+                                    Sobre costo anual
+                                </p>
+                                
+                            </div>
+                            <div class="sin-container-resultado">
+                                <label class="sin-ahorro-resultado" id="SinAhorroTotal">0</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resultado-imagen">
+                        <div class="Imagen-Pluxee">
+                            <img src="../../images/resultados/Alimentacion-imagen-Pluxee.png">
+                        </div>
+                        <div class="resumen-Pluxee">
+                            <img src="../../images/resultados/Vector.png" class="resumen-Pluxee-Estrella" style="width:70px;height: 70px;">
+                            <div class="resumen-Pluxee-text">
+                                <h1>Ya sabes cuánto puedes ahorrar,<br class="br-block">
+                                conocé más sobre Pluxee Alimentación</h1>
+                                <button class="button-asesoramos" onclick="AbrirPluxeeConsumidores()">Te asesoramos</button>
+                            </div>
+                            <img src="../../images/resultados/Tarjeta-Imagen-Pluxee.png" class="resumen-Pluxee-Tarjeta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+     <script src="../../js/resultados/index.js" async defer></script>
+    </body>
+</html>

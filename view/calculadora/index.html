@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calcular Pluxee</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../css/calculadora/main.css">
+        <link rel="shortcut icon" href="../../images/resultados/Icono-Pluxee.ico">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header-title">
+                <span>Maximiza tus ahorros: Descubre tu potencial de ahorro con la Calculadora Pluxee</spna>
+                <hr  class="hr-titulo" width="130px" />
+            </div>
+            <div class="header-subtitle">
+                <span>Ingresa los datos para calcular cuánto puedes ahorrar con la Ley de prestaciones alimentarias y  cuánto es el beneficio a tus colaboradores.</span>   
+            </div>
+            <div class="body-container">
+                <div class="body-breads">
+                    <div class="body-breads-number_1">
+                        <span>1</span>
+                    </div>
+                    <div ><hr  class="hr-numero"/></div>
+                    <div class="body-breads-number_2">
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="body-cards">
+                    <div class="body-cards-first">
+                        <div class="body-cards-first-img">
+                            <img src="../../images/calculadora/Icon-Pluxee-Cantidad.png">
+                        </div>
+                        <div class="body-cards-first-title">
+                            <span>¿Cuántos colaboradores recibirán el beneficio?</span>
+                        </div>
+                        <div class="body-cards-first-text">
+                            <button id="boton-restar" onclick="restarColaboradores()">-</button>
+                            <input class="text-colaboradores" id="text-colaboradores" type="text" value="0" maxlength="4" onkeypress="return validaNumericos(event)">
+                            <button id="boton-sumar" onclick="SumarColaboradores()">+</button>
+                        </div>
+                    </div>
+                    <div class="body-cards-second">
+                        <div class="body-cards-second-img">
+                            <img src="../../images/calculadora/Icon+Pluxee-Descripcion.png"onclick="regresar()">
+                        </div>
+                        <div class="body-cards-second-title">
+                            <span>Monto del beneficio de alimentos al mes adicional al sueldo base que entregarás por trabajador</span>
+                        </div>
+                        <div class="body-cards-second-text">
+                            <input class="text-colaboradores" id="text-colaboradores-second" type="text" value="0" maxlength="4" onkeypress="return validaNumericos(event)">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="body-comentario">
+                    <h4>Ten en cuenta:</h4>
+                    <ul>
+                        <li>Puedes entregar hasta el 20% del sueldo o 2 sueldos mínimos.</li>
+                        <li>El precio de la canasta básica de alimentos de un peruano es de S/235 mensuales.*</li>
+                    </ul>
+                    <p>*Costo de la canasta por persona. Fuente INEI</p>
+                </div>
+                <div class="body-button-result">
+                    <button onclick="resultado()">Calcular resultados</button>
+                </div>
+            </div>
+        </div>    
+        <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+     <script src="../../js/calculadora/index.js" async defer></script>
+    </body>
+</html>
