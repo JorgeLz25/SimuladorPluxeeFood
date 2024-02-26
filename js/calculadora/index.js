@@ -38,7 +38,6 @@ function restarColaboradores(){
     var total = document.getElementById('text-colaboradores');
 	if(total.value > 0)	{
 		total.value = parseInt(total.value)-1; 
-		console.log(total.value);
 	}
 }
 function SumarColaboradores(){
