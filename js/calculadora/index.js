@@ -36,7 +36,10 @@ function validaNumericos(event) {
 }
 function restarColaboradores(){
     var total = document.getElementById('text-colaboradores');
-    total.value = parseInt(total.value)-1; 
+	if(total.value > 0)	{
+		total.value = parseInt(total.value)-1; 
+		console.log(total.value);
+	}
 }
 function SumarColaboradores(){
     var total = document.getElementById('text-colaboradores');
